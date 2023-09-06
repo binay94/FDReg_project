@@ -1,6 +1,41 @@
 ### ml project of food delivery dataset
 The Food Delivery Website project aims to create a user-friendly online platform for ordering food from various restaurants and having it delivered to the customers' location. The website will offer a seamless and convenient way for users to explore menus, place orders, make payments, and track their deliveries in real-time.
 
+## Project Structure :
+      .
+      ├── .ebextensions/                    # Elastic Beanstalk configuration files
+      │   └── python.config                 # Configuration for Python environment
+      ├── .elasticbeanstalk/                # Elastic Beanstalk specific files
+      │   └── config.yml                    # Elastic Beanstalk configuration file
+      ├── Notebook/                         # Jupyter notebooks and data for analysis
+      │   ├── eda.ipynb                     # Exploratory Data Analysis notebook
+      │   ├── model_training.ipynb          # Model Training notebook
+      │   └── data.csv                      # Dataset used for analysis and training
+      ├── templates/                        # Flask HTML templates (if applicable)
+      ├── artifacts/                        # Model and data artifacts
+      │   ├── model.pkl                     # Serialized machine learning model
+      │   ├── preprocessor.pkl              # Serialized data preprocessor
+      │   ├── raw.csv                       # Original raw data
+      │   ├── train.csv                     # Processed training data
+      │   └── test.csv                      # Processed testing data
+      ├── src/                              # Source code directory
+      │   ├── components/                   # Components of your application
+      │   │   ├── __init__.py               # Initialization for components
+      │   │   ├── data_ingestion.py         # Data ingestion module
+      │   │   ├── data_transformation.py    # Data transformation module
+      │   │   └── model_trainer.py          # Model training module
+      │   ├── pipeline/                     # Application pipelines
+      │   │   ├── __init__.py               # Initialization for pipelines
+      │   │   ├── prediction_pipeline.py    # Prediction pipeline module
+      │   │   └── training_pipeline.py      # Training pipeline module
+      │   ├── __init__.py                   # Initialization for src package
+      │   ├── exception.py                  # Custom exception
+      │   ├── logger.py                     # Logging setup
+      │   └── utils.py                      # Utility functions
+      ├── application.py                    # Main entry point for Flask app
+      ├── requirements.txt                  # List of required Python packages
+      └── README.md                         # Project documentation
+
 ## Output As Shown Below :
 ## Homepage
 
